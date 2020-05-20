@@ -9,7 +9,7 @@ public class programa_retangulo {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		double largura;
+		double largura, altura;
 
 		
 		// leitura da largura
@@ -19,6 +19,15 @@ public class programa_retangulo {
 			System.out.printf("O valor deve ser positivo. Tente novamente: ");
 			largura = sc.nextDouble();
 		}
+		
+		// leitura da altura
+		System.out.printf("Digite a altura do retangulo: ");
+		altura = sc.nextDouble();
+		while(altura <= 0.0) {
+			System.out.printf("O valor deve ser positivo. Tente novamente: ");
+			altura = sc.nextDouble();
+		}
+		
 	}
 		
 
